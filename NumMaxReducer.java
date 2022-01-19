@@ -23,7 +23,7 @@ public void reduce(Text key,Iterable<IntWritable> values,Context context) throws
     }
 @Override
 protected void cleanup(Context context) throws IOException, InterruptedException {
-	System.out.print("linfluenceur ayant le plus nombre de share est "+minWord );
+	System.out.print("linfluenceur ayant le plus nombre nim  de like est "+minWord );
     context.write(minWord, new IntWritable(min));
 }
 }
