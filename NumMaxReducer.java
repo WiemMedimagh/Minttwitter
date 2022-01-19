@@ -12,7 +12,7 @@ int min = 0;
 Text minWord = new Text();
 public void reduce(Text key,Iterable<IntWritable> values,Context context) throws IOException, InterruptedException{
     
-	int sum =100000;
+	int sum =1000000;
     for(IntWritable x : values){
     	sum+= x.get();
         }
